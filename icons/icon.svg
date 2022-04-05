@@ -1,0 +1,13 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#000000CC" />
+
+  <polygon points="25,25 225,25 225,50 25,50" fill="#FFFFFFCC"/>
+  <polygon points="25,200 225,200 225,225 25,225" fill="#FFFFFFCC"/>
+
+  <polygon points="25,275 225,275 225,300 25,300" fill="#FFFFFFCC"/>
+  <polygon points="25,450 225,450 225,475 25,475" fill="#FFFFFFCC"/>
+
+  <polygon points="275,25 475,25 475,225 275,225 275,200 450,200 450,50 275,50" fill="#FFFFFFCC"/>
+
+  <polygon points="275,275 475,275 475,475 275,475 275,450 450,450 450,300 275,300" fill="#FFFFFFCC"/>
+</svg>

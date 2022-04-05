@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./popup.css" />
+</head>
+<body>
+    <h1>
+        <img src="/icons/icon.svg" alt="nico_wait_update">
+        nico_wait_update
+    </h1>
+    <details id="config-det">
+        <summary>設定</summary>
+        <label>
+            <span style="display: flex;" id="key-span">スクロール
+                <select id="key-scroll">
+                    <option value="-1" label="スクロール無し"></option>
+                    <option value="0" label="トップ"></option>
+                    <option value="1" label="投稿日時, 再生数"></option>
+                    <option value="2" label="動画タグ" selected></option>
+                    <option value="3" label="動画プレイヤー"></option>
+                    <option value="4" label="プレイヤー下"></option>
+                </select>
+            </span>
+        </label>
+    </details>
+    <h2 id="view-version">script error</h2>
+    <script src="popup.js" charset="utf-8"></script>
+</body>
+</html>
