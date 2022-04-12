@@ -1,10 +1,10 @@
 console.log = () => {}
 
 const scrollClassList = [
-    'HeaderContainer-row',
-    'TagContainer',
-    'MainContainer',
-    'BottomContainer'
+    "HeaderContainer-row",
+    "TagContainer",
+    "MainContainer",
+    "BottomContainer"
 ]
 
 const scroll = (mode) => {
@@ -35,30 +35,44 @@ const scrollDefault = () => {
 
 const removeResumeContainer = () => {
     console.log("removeResumeContainer start");
-    const videoOverlayContainer = document.getElementsByClassName('VideoOverlayContainer')[0];
+    const videoOverlayContainer = document.getElementsByClassName("VideoOverlayContainer")[0];
     console.log(videoOverlayContainer);
     if (!videoOverlayContainer) return;
-    const resumeContainer = videoOverlayContainer.getElementsByClassName('ResumeContainer')[0];
+    const resumeContainer = videoOverlayContainer.getElementsByClassName("ResumeContainer")[0];
     console.log(resumeContainer);
     if (!resumeContainer) return;
     videoOverlayContainer.removeChild(resumeContainer);
     console.log("removeResumeContainer end");
-};
+}
 
 const keyupCallback = (keyBoardEvent) => {
+    const controllerBoxContainer = document.getElementsByClassName("ControllerBoxContainer")[0];
+    const rightFloatingPanel     = document.getElementsByClassName("MainContainer-floatingPanel")[0];
+    const gridAndTagContainer    = document.getElementsByClassName("Grid TagContainer")[0];
+    const tagAndSearchBoxInput   = document.getElementsByClassName("TagSuggestionInput SearchBox-input")[0];
+    const isWriting = !controllerBoxContainer
+        || !rightFloatingPanel
+        || !gridAndTagContainer
+        || !tagAndSearchBoxInput
+        || controllerBoxContainer.classList.contains("is-active")
+        || rightFloatingPanel.children.length > 0
+        || gridAndTagContainer.classList.contains("is-editing")
+        || tagAndSearchBoxInput.classList.contains("is-focus");
+    console.log(`isWriting: ${isWriting}`);
+    if (isWriting) return;
     switch (keyBoardEvent.key) {
-        case 'k':
-        case 'q':
+        case "k":
+        case "q":
             removeResumeContainer();
             break;
-        case 'f':
-            const isFullScreen = document.body.classList.contains('is-fullscreen')
-            console.log(`document.body.classList.contains('is-fullscreen'): ${isFullScreen}`, );
+        case "f":
+            const isFullScreen = document.body.classList.contains("is-fullscreen")
+            console.log(`document.body.classList.contains("is-fullscreen"): ${isFullScreen}`);
             if (isFullScreen) break;
             scrollDefault();
             console.log("keyScroll f");
             break;
-        case 'p':
+        case "p":
             scrollDefault();
             console.log("keyScroll p");
             break;
@@ -70,12 +84,11 @@ const keyupCallback = (keyBoardEvent) => {
 
 const keyScroll = () => {
     console.log("keyScroll start");
-    if (!document.getElementsByClassName("VideoTitle").length) return;
-    document.addEventListener('keyup', keyupCallback);
+    document.addEventListener("keyup", keyupCallback);
     console.log("keyScroll end");
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     console.log("addEventListener start");
     keyScroll();
     console.log("addEventListener end");
