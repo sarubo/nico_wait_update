@@ -33,6 +33,18 @@ const scrollDefault = () => {
     );
 }
 
+const kScroll = () => {
+    chrome.storage.local.get({ kScroll: true }, item => {
+        if (!item.kScroll) return;
+        const isPlayerPlayButton =
+            document.getElementsByClassName("ActionButton ControllerButton PlayerPauseButton").length > 0;
+        if (!isPlayerPlayButton) {
+            return;
+        }
+        scrollDefault();
+    });
+}
+
 const removeResumeContainer = () => {
     console.log("removeResumeContainer start");
     const videoOverlayContainer = document.getElementsByClassName("VideoOverlayContainer")[0];
@@ -62,6 +74,7 @@ const keyupCallback = (keyBoardEvent) => {
     if (isWriting) return;
     switch (keyBoardEvent.key) {
         case "k":
+            kScroll();
             removeResumeContainer();
             break;
         case "f":
