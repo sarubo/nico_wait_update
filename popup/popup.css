@@ -43,7 +43,7 @@ label > span::after {
 }
 
 label > #key-span:hover::after {
-    content: "p, fでスクロールします";
+    content: "p, fキーなどのスクロール先を決めます";
 }
 
 select {
