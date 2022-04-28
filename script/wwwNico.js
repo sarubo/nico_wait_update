@@ -62,7 +62,6 @@ const keyupCallback = (keyBoardEvent) => {
     if (isWriting) return;
     switch (keyBoardEvent.key) {
         case "k":
-        case "q":
             removeResumeContainer();
             break;
         case "f":
