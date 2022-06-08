@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "nico_wait_update",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "ニコニコでのショートカットキーの挙動の変更と追加",
   "icons": {
     "512": "icons/icon.svg",
@@ -35,7 +35,19 @@
         "*://www.nicovideo.jp/tag/*"
       ],
       "js": [ "script/remove_ad_video.js" ],
-      "run_at": "document_end"
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://www.nicovideo.jp/*"
+      ],
+      "js": [ "script/remove_ad.js" ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [ "*://anime.nicovideo.jp/*" ],
+      "js": [ "script/remove_ad_on_anime.js" ],
+      "run_at": "document_start"
     }
   ],
   "browser_action": {
