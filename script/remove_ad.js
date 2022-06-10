@@ -2,7 +2,32 @@ console.log = () => {}
 
 console.log("script/remove_ad.js");
 
-const remover = (classNames) => {
+/**
+ * @param {Element} ad
+ */
+const replace = (ad) => {
+    console.log(ad);
+    const dummy = document.createElement("div");
+    dummy.id = ad.id;
+    dummy.className = ad.className;
+    ad.replaceWith(dummy);
+    console.log("remove");
+}
+
+/**
+ * @param {HTMLCollectionOf<Element>} ads 
+ */
+const replaceAll = (ads) => {
+    for (const ad of ads) {
+        replace(ad);
+    }
+}
+
+/**
+ * @param {string[]} classNames
+ * @param {string[]} idNames
+ */
+const remove = (classNames, idNames) => {
     document.addEventListener("keyup", (en) => {
         console.log("keyup");
         if (en.key !== "Escape") {
@@ -12,13 +37,13 @@ const remover = (classNames) => {
         for (const className of classNames) {
             const ads = document.getElementsByClassName(className);
             console.log(ads.length);
-            for (const iterator of ads) {
-                console.log(iterator);
-                const dummy = document.createElement("div");
-                dummy.id = iterator.id;
-                dummy.className = iterator.className;
-                iterator.replaceWith(dummy);
-                console.log("remove");
+            replaceAll(ads);
+        }
+        for (const name of idNames) {
+            const ad = document.getElementById(name);
+            console.log(ad);
+            if (ad) {
+                replace(ad);
             }
         }
     });
@@ -26,5 +51,5 @@ const remover = (classNames) => {
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("load");
-    remover(["Ads", "ads", "nicoadVideoItem"]);
+    remove(["Ads", "ads", "nicoadVideoItem"], ["LEFT_AD_ELEMENT", "RIGHT_AD_ELEMENT", "dic_pc_300x250_east"]);
 });
