@@ -72,6 +72,12 @@ const keyupCallback = (keyBoardEvent) => {
         || tagAndSearchBoxInput.classList.contains("is-focus");
     console.log(`isWriting: ${isWriting}`);
     if (isWriting) return;
+    const ownerNicoliveBannerContainer = document.getElementsByClassName("OwnerNicoliveBannerContainer")[0];
+    const iconLevel = document.getElementsByClassName("Grid HeaderContainer-row")[0];
+    if (ownerNicoliveBannerContainer && iconLevel) {
+        iconLevel.insertAdjacentElement("beforebegin", ownerNicoliveBannerContainer.cloneNode(true));
+        ownerNicoliveBannerContainer.remove();
+    }
     switch (keyBoardEvent.key) {
         case "k":
             kScroll();
