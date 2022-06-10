@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "nico_wait_update",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ニコニコでのショートカットキーの挙動の変更と追加",
   "icons": {
     "512": "icons/icon.svg",
@@ -39,7 +39,8 @@
     },
     {
       "matches": [
-        "*://www.nicovideo.jp/*"
+        "*://www.nicovideo.jp/*",
+        "*://dic.nicovideo.jp/*"
       ],
       "js": [ "script/remove_ad.js" ],
       "run_at": "document_start"
