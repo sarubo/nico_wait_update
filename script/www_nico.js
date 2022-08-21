@@ -27,10 +27,26 @@ const scroll = (mode) => {
     console.log("scroll end");
 }
 
+const deleteNetabare = () => {
+    const targets = ["PlayerPanelContainer", "GridCell col-full TagContainer-area", "GridCell col-full"];
+    for (const target of targets) {
+        const elms = document.getElementsByClassName(target);
+        for (const elm of elms) {
+            elm.remove();
+        }
+    }
+    const like = "LikeActionButton-count";
+    const elms = document.getElementsByClassName(like);
+    for (const elm of elms) {
+        elm.textContent = "--"
+    }
+}
+
 const scrollDefault = () => {
-    chrome.storage.local.get({ keyScroll: 2 }, item =>
+    chrome.storage.local.get({ keyScroll: 2, delNeta: false }, item => {
+        if (item.delNeta) deleteNetabare();
         scroll(parseInt(item.keyScroll))
-    );
+    });
 }
 
 const kScroll = () => {

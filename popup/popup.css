@@ -56,3 +56,7 @@ select {
     font-weight: bold;
     margin-left: 8px;
 }
+
+ul {
+    list-style-type: none;
+}
