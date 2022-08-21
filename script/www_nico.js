@@ -35,10 +35,18 @@ const deleteNetabare = () => {
             elm.remove();
         }
     }
-    const like = "LikeActionButton-count";
-    const elms = document.getElementsByClassName(like);
+    const target = "LikeActionButton-count";
+    const elms = document.getElementsByClassName(target);
     for (const elm of elms) {
         elm.textContent = "--"
+    }
+    const canDeleteComment = document.getElementsByClassName("CommentOnOffButton-iconHide").length > 0;
+    if (canDeleteComment) {
+        const target = "ActionButton ControllerButton CommentOnOffButton";
+        const elms = document.getElementsByClassName(target);
+        for (const elm of elms) {
+            elm.click();
+        }
     }
 }
 
