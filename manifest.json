@@ -32,7 +32,8 @@
     {
       "matches": [
         "*://www.nicovideo.jp/*",
-        "*://dic.nicovideo.jp/*"
+        "*://dic.nicovideo.jp/*",
+        "*://ch.nicovideo.jp/*"
       ],
       "js": [ "script/remove_ad.js" ],
       "run_at": "document_start"

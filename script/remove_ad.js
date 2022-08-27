@@ -51,5 +51,5 @@ const remove = (classNames, idNames) => {
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("load");
-    remove(["Ads", "ads", "nicoadVideoItem"], ["LEFT_AD_ELEMENT", "RIGHT_AD_ELEMENT", "dic_pc_300x250_east"]);
+    remove(["Ads", "ads", "nicoadVideoItem", "item_left", "counts"], ["LEFT_AD_ELEMENT", "RIGHT_AD_ELEMENT", "dic_pc_300x250_east"]);
 });
