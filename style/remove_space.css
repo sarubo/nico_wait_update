@@ -1,0 +1,22 @@
+.item_right, .item {
+    margin: 0px !important;
+    margin-left: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.item_left, .counts, .actions, .description, .time {
+    display: none !important;
+}
+
+a:focus {
+    color: #0FF !important;
+}
+
+a:focus:visited {
+    color: #F0F !important;
+}
+
+a:visited {
+    color: #707 !important;
+}

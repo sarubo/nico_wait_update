@@ -18,9 +18,9 @@ const replace = (ad) => {
  * @param {HTMLCollectionOf<Element>} ads 
  */
 const replaceAll = (ads) => {
-    for (const ad of ads) {
-        replace(ad);
-    }
+    Array.from(ads).forEach((elm) => {
+        elm.remove();
+    })
 }
 
 /**
@@ -34,22 +34,28 @@ const remove = (classNames, idNames) => {
             return;
         }
         console.log("Escape");
-        for (const className of classNames) {
+        classNames.forEach((className) => {
             const ads = document.getElementsByClassName(className);
             console.log(ads.length);
             replaceAll(ads);
-        }
-        for (const name of idNames) {
+        })
+        idNames.forEach((name) => {
             const ad = document.getElementById(name);
             console.log(ad);
             if (ad) {
-                replace(ad);
+                ad.remove();
             }
-        }
+        })
+        const targets = ["NC-MediaObjectTitle NC-VideoMediaObject-title NC-MediaObjectTitle_fixed2Line"];
+        targets.forEach((target) => {
+            Array.from(document.getElementsByClassName(target)).forEach((elm) => {
+                elm.className = "";
+            })
+        })
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("load");
-    remove(["Ads", "ads", "nicoadVideoItem", "item_left", "counts", "actions"], ["LEFT_AD_ELEMENT", "RIGHT_AD_ELEMENT", "dic_pc_300x250_east"]);
+    remove(["Ads", "ads", "nicoadVideoItem", "videoList01Wrap", "wrap", "itemData", "NC-MediaObject-media", "NC-MediaObject-bodySecondary", "MylistItemAddition MylistItem-addition", "NC-MediaObject-action", "SideContainer MylistSideContainer"], ["LEFT_AD_ELEMENT", "RIGHT_AD_ELEMENT", "dic_pc_300x250_east"]);
 });

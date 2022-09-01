@@ -36,6 +36,7 @@
         "*://ch.nicovideo.jp/*"
       ],
       "js": [ "script/remove_ad.js" ],
+      "css": [ "style/remove_space.css", "style/remove_info.css" ],
       "run_at": "document_start"
     },
     {

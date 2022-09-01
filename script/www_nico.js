@@ -5,7 +5,13 @@ const scrollClassList = [
     "TagContainer",
     "MainContainer",
     "BottomContainer"
-]
+];
+
+const netabareTargets = [
+    "PlayerPanelContainer",
+    "GridCell col-full",
+    "LikeActionButton-count"
+];
 
 const scroll = (mode) => {
     console.log("scroll start");
@@ -27,18 +33,10 @@ const scroll = (mode) => {
     console.log("scroll end");
 }
 
-const deleteNetabare = () => {
-    const targets = ["PlayerPanelContainer", "GridCell col-full TagContainer-area", "GridCell col-full"];
-    for (const target of targets) {
-        const elms = document.getElementsByClassName(target);
-        for (const elm of elms) {
-            elm.remove();
-        }
-    }
-    const target = "LikeActionButton-count";
-    const elms = document.getElementsByClassName(target);
-    for (const elm of elms) {
-        elm.textContent = "--"
+const deleteNetabare = (delNeta) => {
+    toggleClass(delNeta);
+    if (!delNeta) {
+        return;
     }
     const canDeleteComment = document.getElementsByClassName("CommentOnOffButton-iconHide").length > 0;
     if (canDeleteComment) {
@@ -52,7 +50,7 @@ const deleteNetabare = () => {
 
 const scrollDefault = () => {
     chrome.storage.local.get({ keyScroll: 2, delNeta: false }, item => {
-        if (item.delNeta) deleteNetabare();
+        deleteNetabare(item.delNeta);
         scroll(parseInt(item.keyScroll))
     });
 }
@@ -130,8 +128,33 @@ const keyScroll = () => {
     console.log("keyScroll end");
 }
 
+const toggleClass = (delNeta) => {
+    if (delNeta) {
+        netabareTargets.forEach((target) => {
+            Array.from(
+                document.getElementsByClassName(target)
+            ).forEach((elm) => {
+                console.log(elm);
+                elm.classList.add("DelNeta");
+                console.log(elm.classList);
+            });
+        });
+    } else {
+        Array.from(
+            document.getElementsByClassName("DelNeta")
+        ).forEach((elm) => {
+            console.log(elm);
+            elm.classList.remove("DelNeta");
+            console.log(elm.classList);
+        });
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     console.log("addEventListener start");
+    chrome.storage.local.get({ delNeta: false }, item => {
+        toggleClass(item.delNeta);
+    });
     keyScroll();
     console.log("addEventListener end");
 })
