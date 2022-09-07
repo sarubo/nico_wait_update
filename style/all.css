@@ -1,0 +1,11 @@
+a:focus {
+    color: #0FF !important;
+}
+
+a:focus:visited {
+    color: #F7F !important;
+}
+
+a:visited {
+    color: #707 !important;
+}

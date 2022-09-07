@@ -17,6 +17,12 @@
   "content_scripts": [
     {
       "matches": [
+        "*://*.nicovideo.jp/*"
+      ],
+      "css": [ "style/all.css" ]
+    },
+    {
+      "matches": [
         "*://www.nicovideo.jp/watch/*"
       ],
       "js": [ "script/www_nico.js" ],
