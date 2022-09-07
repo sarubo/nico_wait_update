@@ -9,17 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         const asides = document.getElementsByTagName("aside");
-        for (const aside of asides) {
-            for (const iterator of aside.children) {
-                console.log(iterator.tagName);
-                if (iterator.tagName !== "SECTION") {
-                    console.log("remove");
-                    const dummy = document.createElement("div");
-                    dummy.id = iterator.id;
-                    dummy.className = iterator.className;
-                    iterator.replaceWith(dummy);
-                }
-            }
-        }
+        Array.from(asides)
+            .flatMap((aside) => Array.from(aside.children))
+            .filter((elm) => elm.tagName !== "SECTION")
+            .forEach((elm) => {
+                console.log(elm);
+                elm.classList.add("DelNeta");
+                console.log(elm.classList);
+            })
     })
 });
