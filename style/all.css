@@ -1,4 +1,5 @@
 a:focus,
+a:hover,
 .NC-MediaObject .NC-MediaObject-contents:focus .NC-MediaObjectTitle,
 .NicorepoItem-item a:focus .NicorepoItem-contentDetailTitle,
 .NicorepoItem-item:hover a .NicorepoItem-contentDetailTitle {
