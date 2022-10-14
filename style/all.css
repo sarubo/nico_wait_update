@@ -1,11 +1,21 @@
-a:focus {
-    color: #0FF !important;
+a:focus,
+.NC-MediaObject .NC-MediaObject-contents:focus .NC-MediaObjectTitle,
+.NicorepoItem-item a:focus .NicorepoItem-contentDetailTitle,
+.NicorepoItem-item:hover a .NicorepoItem-contentDetailTitle {
+    color: #0080ff !important;
 }
 
-a:focus:visited {
-    color: #F7F !important;
-}
-
-a:visited {
+a:visited,
+.NC-MediaObject .NC-MediaObject-contents:visited .NC-MediaObjectTitle,
+.NicorepoItem-item a:visited .NicorepoItem-contentDetailTitle {
     color: #707 !important;
+}
+
+a:focus:visited,
+a:hover:visited,
+.NC-MediaObject .NC-MediaObject-contents:focus:visited .NC-MediaObjectTitle,
+.NC-MediaObject .NC-MediaObject-contents:hover:visited .NC-MediaObjectTitle,
+.NicorepoItem-item a:focus:visited .NicorepoItem-contentDetailTitle,
+.NicorepoItem-item:hover a:visited .NicorepoItem-contentDetailTitle {
+    color: #F7F !important;
 }
