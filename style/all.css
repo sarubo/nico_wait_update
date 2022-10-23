@@ -9,7 +9,7 @@ a:hover,
 a:visited,
 .NC-MediaObject .NC-MediaObject-contents:visited .NC-MediaObjectTitle,
 .NicorepoItem-item a:visited .NicorepoItem-contentDetailTitle {
-    color: #707 !important;
+    color: #BF00BF !important;
 }
 
 a:focus:visited,
@@ -18,5 +18,5 @@ a:hover:visited,
 .NC-MediaObject .NC-MediaObject-contents:hover:visited .NC-MediaObjectTitle,
 .NicorepoItem-item a:focus:visited .NicorepoItem-contentDetailTitle,
 .NicorepoItem-item:hover a:visited .NicorepoItem-contentDetailTitle {
-    color: #F7F !important;
+    color: #FF7FFF !important;
 }
