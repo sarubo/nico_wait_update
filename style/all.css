@@ -24,3 +24,7 @@ a:hover:visited,
 .SeekBar-buffered {
     background-color: #FFFFFF !important;
 }
+
+body {
+    font-family: Avenir,Lato,-apple-system,BlinkMacSystemFont,Helvetica Neue,Hiragino Kaku Gothic ProN,'Noto Sans CJK JP',Meiryo,メイリオ,sans-serif !important;
+}
