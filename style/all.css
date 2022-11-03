@@ -20,3 +20,7 @@ a:hover:visited,
 .NicorepoItem-item:hover a:visited .NicorepoItem-contentDetailTitle {
     color: #FF7FFF !important;
 }
+
+.SeekBar-buffered {
+    background-color: #FFFFFF !important;
+}
