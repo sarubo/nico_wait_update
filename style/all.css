@@ -30,10 +30,10 @@ body {
 }
 
 .VideoDescriptionSeriesContainer-itemTitle {
-  height: 1.25em;
+  height: 1.25em !important;
 }
 
 .VideoDescriptionSeriesContainer-watchPageLink+.VideoDescriptionSeriesContainer-watchPageLink,
 .VideoDescriptionSeriesContainer-body {
-  margin-top: 0.5em;
+  margin-top: 0.5em !important;
 }
