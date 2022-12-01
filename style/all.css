@@ -49,3 +49,16 @@ body {
 .VideoDescription-series {
   margin-top: 8px !important;
 }
+
+.VideoOwnerInfo-links {
+  padding: 4px 4px 0 !important;
+}
+
+.VideoOwnerInfo-pageLinks {
+  height: 1.25em !important;
+}
+
+.VideoOwnerUploadedLink {
+  margin: 4px 4px 0 0 !important;
+  padding: 0px 4px !important;
+}
