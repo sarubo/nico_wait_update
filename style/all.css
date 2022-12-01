@@ -37,3 +37,15 @@ body {
 .VideoDescriptionSeriesContainer-body {
   margin-top: 0.5em !important;
 }
+
+.VideoDescriptionSeriesContainer-header {
+  margin-top: 4px !important;
+}
+
+.VideoDescriptionSeriesContainer {
+  margin-bottom: 8px !important;
+}
+
+.VideoDescription-series {
+  margin-top: 8px !important;
+}
