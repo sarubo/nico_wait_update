@@ -1,58 +1,59 @@
 body {
-    width: 240px;
-    color: #dadada;
-    background-color: #252525;
-    overflow-y: scroll;
-    font-size: medium;
-    margin-bottom: -12px;
-    user-select: none;
+  width: 240px;
+  color: #dadada;
+  background-color: #252525;
+  overflow-y: scroll;
+  font-size: medium;
+  margin-bottom: -12px;
+  user-select: none;
 }
 
 h1 {
-    margin: 4px;
-    font-size: 20px;
+  margin: 4px;
+  font-size: 20px;
 }
 
-h1 > img {
-    width: 20px;
-    margin-bottom: -4px;
+h1>img {
+  width: 20px;
+  margin-bottom: -4px;
 }
 
 #view-version {
-    font-size: medium;
-    text-align: right;
-    font-weight: lighter;
-    user-select: text;
+  font-size: medium;
+  text-align: right;
+  font-weight: lighter;
+  user-select: text;
 }
 
-details > summary {
-    font-weight: bold;
-    margin: 4px;
+details>summary {
+  font-weight: bold;
+  margin: 4px;
 }
 
-label > span {
-    position: relative;
-}
-label > span::after {
-    position: absolute;
-    bottom: 100%;
-    left: 0px;
-    font-size: small;
-    color: #dadadaff;
-    background-color: #252525cc;
+label>span {
+  position: relative;
 }
 
-label > #key-span:hover::after {
-    content: "p, fキーなどのスクロール先を決めます";
+label>span::after {
+  position: absolute;
+  bottom: 100%;
+  left: 0px;
+  font-size: small;
+  color: #dadadaff;
+  background-color: #252525cc;
+}
+
+label>#key-span:hover::after {
+  content: "p, fキーなどのスクロール先を決めます";
 }
 
 select {
-    transition-duration: 0.1s;
-    border: 1px solid;
-    border-radius: 4px;
-    font-size: small;
-    color: #dadada;
-    background-color: #252525;
-    font-weight: bold;
-    margin-left: 8px;
+  transition-duration: 0.1s;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: small;
+  color: #dadada;
+  background-color: #252525;
+  font-weight: bold;
+  margin-left: 8px;
 }

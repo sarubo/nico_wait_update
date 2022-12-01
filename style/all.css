@@ -3,13 +3,13 @@ a:hover,
 .NC-MediaObject .NC-MediaObject-contents:focus .NC-MediaObjectTitle,
 .NicorepoItem-item a:focus .NicorepoItem-contentDetailTitle,
 .NicorepoItem-item:hover a .NicorepoItem-contentDetailTitle {
-    color: #0080ff !important;
+  color: #0080ff !important;
 }
 
 a:visited,
 .NC-MediaObject .NC-MediaObject-contents:visited .NC-MediaObjectTitle,
 .NicorepoItem-item a:visited .NicorepoItem-contentDetailTitle {
-    color: #BF00BF !important;
+  color: #BF00BF !important;
 }
 
 a:focus:visited,
@@ -18,13 +18,13 @@ a:hover:visited,
 .NC-MediaObject .NC-MediaObject-contents:hover:visited .NC-MediaObjectTitle,
 .NicorepoItem-item a:focus:visited .NicorepoItem-contentDetailTitle,
 .NicorepoItem-item:hover a:visited .NicorepoItem-contentDetailTitle {
-    color: #FF7FFF !important;
+  color: #FF7FFF !important;
 }
 
 .SeekBar-buffered {
-    background-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
 }
 
 body {
-    font-family: Avenir,Lato,-apple-system,BlinkMacSystemFont,Helvetica Neue,Hiragino Kaku Gothic ProN,'Noto Sans CJK JP',Meiryo,メイリオ,sans-serif !important;
+  font-family: Avenir, Lato, -apple-system, BlinkMacSystemFont, Helvetica Neue, Hiragino Kaku Gothic ProN, 'Noto Sans CJK JP', Meiryo, メイリオ, sans-serif !important;
 }
