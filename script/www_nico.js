@@ -60,21 +60,22 @@ const removeResumeContainer = () => {
 const keyupCallback = (keyBoardEvent) => {
   const controllerBoxContainer = document.getElementsByClassName("ControllerBoxContainer")[0];
   const rightFloatingPanel = document.getElementsByClassName("MainContainer-floatingPanel")[0];
-  const gridAndTagContainer = document.getElementsByClassName("Grid TagContainer")[0];
+  const tagContainer = document.getElementsByClassName("TagContainer")[0];
   const tagAndSearchBoxInput = document.getElementsByClassName("TagSuggestionInput SearchBox-input")[0];
   const isWriting = !controllerBoxContainer
     || !rightFloatingPanel
-    || !gridAndTagContainer
+    || !tagContainer
     || !tagAndSearchBoxInput
     || controllerBoxContainer.classList.contains("is-active")
     || rightFloatingPanel.children.length > 0
-    || gridAndTagContainer.classList.contains("is-editing")
+    || tagContainer.classList.contains("is-editing")
     || tagAndSearchBoxInput.classList.contains("is-focus");
   console.log(`isWriting: ${isWriting}`);
   if (isWriting) return;
   const ownerNicoliveBannerContainer = document.getElementsByClassName("OwnerNicoliveBannerContainer")[0];
   const iconLevel = document.getElementsByClassName("Grid HeaderContainer-row")[0];
   if (ownerNicoliveBannerContainer && iconLevel) {
+    console.log(`OwnerNicoliveBannerContainer`);
     iconLevel.insertAdjacentElement("beforebegin", ownerNicoliveBannerContainer.cloneNode(true));
     ownerNicoliveBannerContainer.remove();
   }
