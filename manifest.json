@@ -38,7 +38,8 @@
     {
       "matches": [
         "*://www.nicovideo.jp/*",
-        "*://dic.nicovideo.jp/*"
+        "*://dic.nicovideo.jp/*",
+        "*://live.nicovideo.jp/watch/*"
       ],
       "js": [ "script/remove_ad.js" ],
       "css": [ "style/ad.css" ],
