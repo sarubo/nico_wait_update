@@ -32,5 +32,5 @@ const remove = (selectors) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("load");
-  remove([".Ads", ".ads", ".nicoadVideoItem", ".RectangleAdContainer", ".BottomSideContainer-stickyArea", ".BottomContainer-adContainer", "#LEFT_AD_ELEMENT", "#RIGHT_AD_ELEMENT", "#dic_pc_300x250_east", "#program-information-ad", "#ad-footer", ".___site-header___Vbvc8 > aside > div:nth-child(1)"]);
+  remove([".Ads", ".ads", ".nicoadVideoItem", ".RectangleAdContainer", ".BottomSideContainer-stickyArea", ".BottomContainer-adContainer", "#LEFT_AD_ELEMENT", "#RIGHT_AD_ELEMENT", "#dic_pc_300x250_east", "#program-information-ad", "#ad-footer", ".___site-header___Vbvc8 > aside > div:nth-child(1)", "div.notice.banner", "#web_pc_sidefollow_container > ins:nth-child(1)"]);
 });
