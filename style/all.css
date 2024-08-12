@@ -1,14 +1,14 @@
 a:focus,
 a:hover,
 .NC-MediaObject .NC-MediaObject-contents:focus .NC-MediaObjectTitle,
-.NicorepoItem-item a:focus .NicorepoItem-contentDetailTitle,
-.NicorepoItem-item:hover a .NicorepoItem-contentDetailTitle {
+.TimelineItem-content a:focus .TimelineItem-contentTitle,
+.TimelineItem-content:hover a .TimelineItem-contentTitle {
   color: #0080ff !important;
 }
 
 a:visited,
 .NC-MediaObject .NC-MediaObject-contents:visited .NC-MediaObjectTitle,
-.NicorepoItem-item a:visited .NicorepoItem-contentDetailTitle {
+.TimelineItem-content a:visited .TimelineItem-contentTitle {
   color: #BF00BF !important;
 }
 
@@ -16,53 +16,11 @@ a:focus:visited,
 a:hover:visited,
 .NC-MediaObject .NC-MediaObject-contents:focus:visited .NC-MediaObjectTitle,
 .NC-MediaObject .NC-MediaObject-contents:hover:visited .NC-MediaObjectTitle,
-.NicorepoItem-item a:focus:visited .NicorepoItem-contentDetailTitle,
-.NicorepoItem-item:hover a:visited .NicorepoItem-contentDetailTitle {
+.TimelineItem-content a:focus:visited .TimelineItem-contentTitle,
+.TimelineItem-content:hover a:visited .TimelineItem-contentTitle {
   color: #FF7FFF !important;
-}
-
-.SeekBar-buffered {
-  background-color: #FFFFFF !important;
 }
 
 body {
   font-family: sans-serif !important;
-}
-
-.VideoDescriptionSeriesContainer-itemTitle {
-  height: 1.25em !important;
-}
-
-.VideoDescriptionSeriesContainer-watchPageLink+.VideoDescriptionSeriesContainer-watchPageLink,
-.VideoDescriptionSeriesContainer-body {
-  margin-top: 0.5em !important;
-}
-
-.VideoDescriptionSeriesContainer-header {
-  margin-top: 4px !important;
-}
-
-.VideoDescriptionSeriesContainer {
-  margin-bottom: 8px !important;
-}
-
-.VideoDescription-series {
-  margin-top: 8px !important;
-}
-
-.VideoOwnerInfo-links {
-  padding: 4px 4px 0 !important;
-}
-
-.VideoOwnerInfo-pageLinks {
-  height: 1.25em !important;
-}
-
-.VideoOwnerUploadedLink {
-  margin: 4px 4px 0 0 !important;
-  padding: 0px 4px !important;
-}
-
-.TagContainer .TagContainer-area .TagList .TagItem.is-locked {
-  border: 1px solid #d9a300 !important;
 }

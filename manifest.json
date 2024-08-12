@@ -25,15 +25,14 @@
       "matches": [
         "*://www.nicovideo.jp/watch/*"
       ],
-      "js": [ "script/www_nico.js" ],
-      "run_at": "document_start"
+      "js": [ "script/www_nico_watch.js" ],
+      "css": [ "style/www_nico_watch.css" ]
     },
     {
       "matches": [
         "*://live.nicovideo.jp/watch/*"
       ],
-      "js": [ "script/live_nico.js" ],
-      "run_at": "document_start"
+      "js": [ "script/live_nico.js" ]
     },
     {
       "matches": [
@@ -42,19 +41,11 @@
         "*://live.nicovideo.jp/watch/*"
       ],
       "js": [ "script/remove_ad.js" ],
-      "css": [ "style/ad.css" ],
-      "run_at": "document_start"
+      "css": [ "style/ad.css" ]
     },
     {
       "matches": [ "*://anime.nicovideo.jp/*" ],
-      "js": [ "script/remove_ad_on_anime.js" ],
-      "run_at": "document_start"
+      "js": [ "script/remove_ad_on_anime.js" ]
     }
-  ],
-  "browser_action": {
-    "default_popup": "popup/popup.html"
-  },
-  "permissions": [
-    "storage"
   ]
 }

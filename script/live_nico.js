@@ -1,4 +1,4 @@
-console.log = () => { }
+/* console.log = () => { } */
 
 const nicoNama = () => {
   console.log("nicoNama 1");
@@ -52,8 +52,6 @@ const nicoNama = () => {
   console.log("nicoNama 8");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("addEventListener start");
-  nicoNama();
-  console.log("addEventListener end");
-})
+console.log("addEventListener start");
+nicoNama();
+console.log("addEventListener end");
