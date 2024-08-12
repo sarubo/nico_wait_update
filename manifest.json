@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "nico_wait_update",
-  "version": "1.7.0",
-  "description": "ニコニコでのショートカットキーの挙動の変更と追加",
+  "version": "2.0.0",
+  "description": "ニコニコで欲しいと思った機能を無理矢理追加",
   "icons": {
     "512": "icons/icon.svg",
     "256": "icons/icon.svg",
@@ -11,7 +11,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "sarubo2016@gmail.com"
+      "id": "{ac2b0bad-a9f3-4976-8991-b7fdaff59fad}"
     }
   },
   "content_scripts": [
