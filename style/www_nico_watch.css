@@ -10,7 +10,7 @@ div.pos_relative.bg_monotone\.L0.aspect_16\:9.w_100\%>div.pos_absolute.inset_0:n
   display: none;
 }
 
-div.d_flex.flex-wrap_nowrap.min-w_\[min-content\].max-w_\[min-content\]>button[data-element-params="{\"current\":true}"]:first-child>svg.w_font.h_font {
+div.d_flex.flex-wrap_nowrap.min-w_\[min-content\].max-w_\[min-content\]>button[data-element-params*="\"current\":true"]:first-child>svg.w_font.h_font {
   fill: #ed7372;
 }
 
