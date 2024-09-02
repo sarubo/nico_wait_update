@@ -1,4 +1,4 @@
-/* console.log = () => { } */
+console.log = () => { }
 
 console.log("script/remove_ad.js");
 
@@ -21,7 +21,6 @@ const addClass = (selectors) => {
  */
 const remove = (selectors) => {
   document.addEventListener("keyup", (en) => {
-    console.log("keyup");
     if (en.key !== "Escape") {
       return;
     }

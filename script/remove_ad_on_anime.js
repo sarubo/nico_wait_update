@@ -1,4 +1,4 @@
-/* console.log = () => { } */
+console.log = () => { }
 
 console.log("script/remove_ad_on_anime.js");
 

@@ -1,4 +1,4 @@
-/* console.log = () => { } */
+console.log = () => { }
 
 const nicoNama = () => {
   console.log("nicoNama 1");
