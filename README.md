@@ -1,6 +1,6 @@
 # nico_wait_update
 
-Firefox Developer Edition での動作を想定しています。Firefox (Stable) の場合では動作しないと思われます。使用するには about:config にて `xpinstall.signatures.required` を `false` にしてください。この設定には危険が伴うので注意してください。設定後に `icons` `popup` `script` `manifest.json` をzipにまとめて about:addons にてドラックアンドドロップで読み込ませると使えるようになります。
+Firefox Developer Edition での動作を想定しています。Firefox (Stable) の場合では動作しないと思われます。使用するには about:config にて `xpinstall.signatures.required` を `false` にしてください。この設定には危険が伴うので注意してください。設定後に `icons` `script` `style` `manifest.json` をzipにまとめて about:addons にてドラックアンドドロップで読み込ませると使えるようになります。
 
 ### ニコニコ動画での機能
 
