@@ -47,5 +47,9 @@
       "matches": [ "*://anime.nicovideo.jp/*" ],
       "js": [ "script/remove_ad_on_anime.js" ]
     }
-  ]
+  ],
+  "permissions": ["history", "webRequest", "webRequestBlocking", "https://www.nicovideo.jp/"],
+  "background": {
+    "scripts": ["script/background.js"]
+  }
 }
