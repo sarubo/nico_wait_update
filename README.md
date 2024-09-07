@@ -10,8 +10,8 @@ Firefox Developer Edition での動作を想定しています。Firefox (Stable
 - 動画画面の端の丸まりを削除
 - キーボードの p, k, space を押したときにスクロール
 - ブラウザの履歴にsearchParamsを除いたurlを残す。対応しているのは
-   - www.nicovideo.jp/watch/*
-   - www.nicovideo.jp/user/*
+   - `www.nicovideo.jp/watch/*`
+   - `www.nicovideo.jp/user/*`
 
 ### ニコニコ生放送での機能
 
