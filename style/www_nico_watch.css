@@ -1,4 +1,4 @@
-.aspect_auto {
+.asp_auto {
   border-radius: unset !important;
 }
 
@@ -6,7 +6,7 @@ header.d_flex:nth-child(2) {
   position: static !important;
 }
 
-div.pos_relative.bg_monotone\.L0.aspect_16\:9.w_100\%>div.pos_absolute.inset_0:nth-child(4).bg_transparentGray\.A20 {
+div.grid-area_\[player\] div.pos_absolute.inset_0.bg-c_transparentGray\.A20 {
   display: none;
 }
 
