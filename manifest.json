@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "nico_wait_update",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "ニコニコで欲しいと思った機能を無理矢理追加",
   "icons": {
     "512": "icons/icon.svg",
