@@ -1,9 +1,9 @@
 browser.webRequest.onBeforeRequest.addListener(
   (requestDetails) => {
     const addr = new URL(requestDetails.url);
-    const playlist = addr.searchParams.get("playlist");
+    const searchParamsSize = addr.searchParams.size;
     addr.search = "";
-    if (playlist !== null) {
+    if (searchParamsSize > 0) {
       browser.history.addUrl({
         url: addr.href,
         title: addr.href,
