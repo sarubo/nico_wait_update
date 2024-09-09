@@ -12,6 +12,7 @@ Firefox Developer Edition での動作を想定しています。Firefox (Stable
 - ブラウザの履歴にsearchParamsを除いたurlを残す。対応しているのは
    - `www.nicovideo.jp/watch/*`
    - `www.nicovideo.jp/user/*`
+   - `www.nicovideo.jp/tag/*`
 
 ### ニコニコ生放送での機能
 
